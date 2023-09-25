@@ -1,2 +1,2 @@
 Welcome to Vatsal's portfolio website.
-It can be accessed using: khandor.github.io
+It can be accessed using: khandorvatsal.github.io
