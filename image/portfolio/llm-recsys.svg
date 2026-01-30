@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="LLM recommender system illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9f7f2" />
+      <stop offset="1" stop-color="#f3efe5" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e" />
+      <stop offset="1" stop-color="#0b4f4a" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="48" fill="url(#bg)" />
+
+  <!-- Embedding space nodes -->
+  <circle cx="250" cy="260" r="70" fill="#ffffff" stroke="#b9dfd5" stroke-width="6" />
+  <circle cx="470" cy="210" r="60" fill="#ffffff" stroke="#b9dfd5" stroke-width="6" />
+  <circle cx="690" cy="280" r="70" fill="#ffffff" stroke="#b9dfd5" stroke-width="6" />
+  <circle cx="910" cy="220" r="55" fill="#ffffff" stroke="#b9dfd5" stroke-width="6" />
+  <circle cx="470" cy="430" r="55" fill="#ffffff" stroke="#b9dfd5" stroke-width="6" />
+  <circle cx="740" cy="450" r="65" fill="#ffffff" stroke="#b9dfd5" stroke-width="6" />
+
+  <path d="M320 260 L410 230 L540 260 L620 290 L840 240" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" />
+  <path d="M470 270 L470 370 L600 420 L700 430" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" />
+
+  <!-- Similarity ranking cards -->
+  <rect x="150" y="560" width="900" height="170" rx="28" fill="#ffffff" stroke="#d9ede7" />
+  <rect x="210" y="600" width="220" height="22" rx="11" fill="#d9ede7" />
+  <rect x="470" y="600" width="220" height="22" rx="11" fill="#d9ede7" />
+  <rect x="730" y="600" width="220" height="22" rx="11" fill="#d9ede7" />
+  <rect x="210" y="640" width="180" height="16" rx="8" fill="#d9ede7" />
+  <rect x="470" y="640" width="180" height="16" rx="8" fill="#d9ede7" />
+  <rect x="730" y="640" width="180" height="16" rx="8" fill="#d9ede7" />
+</svg>

@@ -1,368 +1,353 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/index.css">
-  <link rel="stylesheet" href="CSS/Skins/color-1.css">
-  <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vatsal Khandor | ML Engineer & Data Scientist</title>
+  <meta
+    name="description"
+    content="Portfolio of Vatsal Khandor, ML engineer and data scientist focused on production-grade AI, research, and full-stack systems."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="CSS/index.css" />
 </head>
 <body>
-  <!-- Main Container Start -->
-  <div class="main-container">
-    <div class="aside">
-      <div class="nav-toggler">
-        <span></span>
-      </div>
-      <ul class="nav">
-        <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-        <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-        <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
-      </ul>
-    </div>
-    <div class="main-content">
-      <div class="home active section" id="home">
-        <div class="container">
-          <div class="row">
-            <div class="home-info padd-15">
-              <h3 class="hello">Hello, My Name Is <span class="name">Vatsal Khandor</span></h3>
-              <h3 class="my-profession">I'm a <span class="typing"></span></h3>
-              <p>I'm an aspiring data scientist and ML Engineer with an experience of 3+ internships. I have a knack for data modelling and extracting important insights from data.</p>
-              <p>I am currently exploring exciting opportunities and keenly looking for roles that can benefit from my experience in AI/ML and Data Science.</p>
-                <a href="Resume/Vatsal_Khandor_Resume.pdf" class="btn" download>Download CV</a>
-                <ul class="social-icons">
-                  <li><a href="https://www.linkedin.com/in/khandorvatsal/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                  <li><a href="https://github.com/khandorvatsal" target="_blank"><i class="fab fa-github"></i></a></li>
-                  <li><a href="mailto:khandor@usc.edu"><i class="fas fa-envelope"></i></a></li>
-                </ul>
-              
-            </div>
-            
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Go to top">VK</a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        <span class="nav-toggle-label">Menu</span>
+        <span class="nav-toggle-icon"></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
+        <a class="btn small" href="Resume/Vatsal_Khandor_Resume.pdf" download>Download Resume</a>
+      </nav>
+    </header>
 
-            <div class="padd-15">
-              <img src="image/photo_new_white_backg-removebg-preview.png" alt="">
-            </div>
+    <main id="top">
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <div class="hero-topline">
+            <span class="location">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2c-3.87 0-7 3.13-7 7 0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z" />
+              </svg>
+              Seattle, WA · Open to relocation
+            </span>
+          </div>
+          <p class="eyebrow">BACKEND ENGINEERING · DISTRIBUTED SYSTEMS · GENAI INFRA</p>
+          <h1>Vatsal Khandor</h1>
+          <p class="lead">
+            Backend Software Engineer at AWS (Identity & Governance) building cloud infrastructure
+            and distributed systems that operate reliably at scale in security- and policy-critical
+            environments.
+          </p>
+          <p class="lead">
+            I’m looking for backend roles focused on distributed systems, infra, and GenAI workloads.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn ghost" href="#contact">Contact me</a>
           </div>
         </div>
-      </div>
-      <!-- Start About -->
-      <div class="about section" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>About Me</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="about-content padd-15">
-              <div class="row">
-                <div class="about-text padd-15">
-                  <h3>I'm Vatsal Khandor and I'm a novice <span>Data Scientist</span></h3>
-                  <p>I am a recent graduate with a Master’s degree in Computer Science from USC’s Viterbi School of Engineering. My educational background also includes a Bachelor of Engineering in Computer Engineering from Mumbai University. During my studies, I gained practical experience as an AI/ML Engineering Intern at various companies, where I developed a strong capacity to comprehend and implement complex innovations.</p>
-                  <p></p>
-                  <br>
-                  <p>I won a hackathon recently (1st place!!) for developing a RAG system using Gemini for calculation of underwriting for multifamily investments using LLM's. In my free time, I love cooking, traveling, playing cricket, and playing 8-ball pool. I also enjoy Scuba Diving! :)</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="education padd-15">
-                  <h3 class="title">Experience</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-                        <!-- timeline item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> January 2024 - May 2024
-                          </h3>
-                          <h4 class="timeline-title">USC - Software Engineer</h4>
-                            <p class="timeline-text">• Developed secure full-stack web app leveraging frontend and backend technologies for Dr. Moats at Children’s Hospital of LA.</p>
-                            <p class="timeline-text">• Implemented Role-Based Access Control (RBAC) in the web app containing data repository, ensuring secure access for diverse roles (Doctor, Scorer, Analyst, Administrator) and full compliance with healthcare privacy regulations by excluding all PHI.</p>
-                        </div>
-                        <!-- timeline item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> September 2021 - December 2021
-                          </h3>
-                          <h4 class="timeline-title">Bombay Softwares - Machine Learning Intern</h4>
-                          <p class="timeline-text">• Implemented transient pose conditions using 33 skeleton keypoints and co-ordinates from BlazePose; detection of incomplete reps increased by approx 25%.</p>
-                            <p class="timeline-text">• Designed metrics for A/B testing. Redesigned global API conventions and eliminated 57% redundant code per exercise, reducing technical debt.</p>
-                        </div>
-                        <!-- timeline item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> May 2021 - August 2021
-                          </h3>
-                          <h4 class="timeline-title">Code13 Edutech Pvt. Ltd. - Machine Learning Intern</h4>
-                          <p class="timeline-text">• Accomplished development of a chatbot with feature of “human handoff”; bot was trained to assign issue for human interaction using NLP techniques on client-side and server-side with Botpress.</p>
-                            <p class="timeline-text">• Executed integration of chatbot suggesting courses based on user qualifications for company’s website. Statistics indicate a 25% increase in resolved queries and engagement with chatbot.</p>  
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="experience padd-15">
-                  <h3 class="title">Education</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-                        <!-- timeline item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> August 2022 - May 2024
-                          </h3>
-                          <img src="image/usc.jpg" alt="USC Logo" class="usc-logo" style="max-width: 100%;">
-                          <h4 class="timeline-title">University of Southern California</h4>
-                          <p class="timeline-text">Master of Science (MS) in Computer Science</p>
-                          <p class="timeline-text">CGPA: 3.85/4</p>
-                          <p class="timeline-text">President at GRIDS, largest data science student organization at USC.</p>
-                          <p class="timeline-text">Lead Teaching Staff Member for DSCI 250 and CSCI 585.</p>
-                        </div>
-                        <!-- timeline item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> August 2018 - May 2022
-                          </h3>
-                          <img src="image/djsce.png" alt="DJSCE Logo" class="djsce-logo" style="max-width: 100%;">
-                          <h4 class="timeline-title">Dwarkadas J. Sanghvi College of Engineering, Mumbai University</h4>
-                          <p class="timeline-text">Bachelor of Engineering in Computer Engineering</p>
-                          <p class="timeline-text">CGPA: 3.92/4</p>
-                          <p class="timeline-text">GRE: 319/340 with a 170/170 in the Quantitative section.</p>
-                        </div>
-                        <!-- timeline item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> August 2016 - May 2018
-                          </h3>
-                          <h4 class="timeline-title">Nirmala Memorial Foundation, Kandivali (East)</h4>
-                          <p class="timeline-text">High School (12th grade Science stream): 92.62% </p>
-                          <p class="timeline-text">MHT-CET: Top 1%ile from the entire Maharashtra State </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br>
-              <div class = "timeline shadow-dark">
-              <h2 class="title">Extra Curriculars and Achievements</h2><br>
-                <ul class="timeline-text" style = "padding-left: 25px;">
-                  <li class="custom-li-red">Ex-Lead Teaching Staff for DSCI 250, CSCI 585: Handled a team of 15 TA's and 250 enrolled students. Responsible for end-to-end course planning and execution. Ex-Teaching Staff Member for CSCI 585, DSCI 531, and CSCI 455.</li>
-                  <li class="custom-li-red">Ex-President at GRIDS (Graduates Rising in Data Science) with 500+ active members, the largest graduate student organization at Viterbi School of Engineering. Ex-VP and Executive Board Member.</li>
-                  <li class="custom-li-red">Led a group of 6 students for presenting a working prototype of a “Smart Mirror” for state level “Strike” competition developed over a period of 1 year after getting shortlisted from 59 teams. (ISBN: 978-93-5437-776-1) <a href="https://djsceietesf.files.wordpress.com/2021/06/dj-strike-magazine-final.pdf" target="_blank" style="text-decoration: underline;">Link</a></li>
-                  <li class="custom-li-red">National Service Scheme (NSS): Volunteered for several activities including Blood Donation Drive, 7-day Social Service Camp, Beach Cleaning, Thanksgiving, Street Plays, etc.</li>
-                  <li class="custom-li-red">Appointed as a Student Council Leader and lead a team of 100 students and bagged 2 out of 3 awards (Aditha and Eklavya) from high school principal from a batch of 400 students.</li>
-                  <li class="custom-li-red">Won 3rd place at “V.V Bhatt” street play competition amongst 60+ schools and consolation prizes at elocutions.</li>
-                  <li class="custom-li-red">Received awards for being the Math and Hindi-French Composite High School Topper at Annual Function 2016.</li>
-                </ul>
-              </div>
-              <br>
-              <div class="row">
-                <div class="buttons padd-15">
-                  <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End About -->
-      
-      <!-- Portfolio Srart -->
-      <section class="portfolio section" id="portfolio">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Portfolio</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="portfolio-heading padd-15">
-              <h2>Personal Projects:</h2>
-            </div>
-          </div>
-          <div class="row">
-            <!-- portfolio item start -->
-            <div class="portfolio-item padd-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <a href="https://drive.google.com/drive/folders/18Xe5IhIyQ3O-dRe2aQEPQSrdp0qUztWv?usp=sharing" style="text-decoration: none;">
-                    <img src="image/portfolio/screenshot-1.png" alt="">
-                  </a>
-                </div>
-              </div>
-              <a href="https://drive.google.com/drive/folders/18Xe5IhIyQ3O-dRe2aQEPQSrdp0qUztWv?usp=sharing" style="text-decoration: none;" target="_blank"><p style="text-align: center;">Automated Extraction of Reproduction Steps for Android App Debugging</p></a>
-            </div>
-            <!-- portfolio item end -->
-            <!-- portfolio item start -->
-            <div class="portfolio-item padd-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <a href="#" style="text-decoration: none;">
-                    <img src="image/portfolio/screenshot-2.png" alt="">
-                  </a>
-                </div>
-              </div>
-              <a href="https://colab.research.google.com/drive/1zhjV8RfOty6YTLKeL5rrVtR9nkE9h6Ix" style="text-decoration: none;" target="_blank"><p style="text-align: center;">Algorithmic Trading using Reinforcement Learning and Sentimental Analysis</p></a>
-            </div>
-            <!-- portfolio item end -->
-            <!-- portfolio item start -->
-            <div class="portfolio-item padd-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="image/portfolio/screenshot-3.png" alt="">
-                </div>
-              </div>
-              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=53WT9EoAAAAJ&citation_for_view=53WT9EoAAAAJ:u5HHmVD_uO8C" style="text-decoration: none;" target="_blank"><p style="text-align: center;">Eclectic Analysis of Classifiers for Fake News Detection</p></a>
-            </div>
-            <!-- portfolio item end -->
-            <!-- portfolio item start -->
-            <div class="portfolio-item padd-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="image/portfolio/screenshot-4.png" alt="">
-                </div>
-              </div>
-              <a href="https://github.com/khandorvatsal/credit-risk-assessment" style="text-decoration: none;" target="_blank"><p style="text-align: center;">Credit Risk Assessment for Banking Systems</p></a>
-            </div>
-            <!-- portfolio item end -->
-            <!-- portfolio item start -->
-            <div class="portfolio-item padd-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="image/portfolio/screenshot-5.png" alt="">
-                </div>
-              </div>
-              <a href="https://indjst.org/articles/prediction-of-ipl-matches-using-machine-learning-while-tackling-ambiguity-in-results" style="text-decoration: none;" target="_blank"><p style="text-align: center;">IPL Prediction using ML while tackling ambiguity in results</p></a>
-            </div>
-            <!-- portfolio item end -->
-            <!-- portfolio item start -->
-            <div class="portfolio-item padd-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="image/portfolio/screenshot-6.png" alt="">
-                </div>
-              </div>
-              <a href="https://github.com/khandorvatsal/CBT-Sentiment-Analysis-Tool" style="text-decoration: none;" target="_blank"><p style="text-align: center;">Cognitive Behavioral Therapy based Sentiment Analysis Website</p></a>
-            </div>
-            <!-- portfolio item end -->
+        <div class="hero-visual">
+          <div class="portrait-card">
+            <img src="image/DSC06098.JPG" alt="Portrait of Vatsal Khandor" />
           </div>
         </div>
       </section>
-      <!-- Portfolio End -->
-      <!-- Contact Start -->
-      <section class="contact section" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Contact Me</h2>
-            </div>
+
+      <section class="section" id="about">
+        <div class="section-head">
+          <p class="section-eyebrow">About</p>
+          <h2>Engineer who turns data into products</h2>
+        </div>
+        <div class="about-grid">
+          <div class="card large">
+            <p>
+              I’m a Software Engineer at AWS working on cloud infrastructure and distributed systems
+              within the Identity & Governance domain. I build production systems that must be
+              reliable at scale while handling sensitive workflows like security, policy enforcement,
+              and enterprise controls.
+            </p>
+            <p>
+              Before AWS, I completed my MS in Computer Science at USC, working on applied ML and
+              LLM-based systems (LLaMA embeddings, FAISS similarity search, RAG workflows). I’m
+              interested in how backend platforms and GenAI workloads evolve together at scale.
+            </p>
           </div>
-          <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
-          <h4 class="contact-sub-title padd-15">HERE ARE MY CONTACT DETAILS</h4>
-          <ul class="social-icons-contact">
-            <li><a href="https://www.linkedin.com/in/khandorvatsal/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/khandorvatsal" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="mailto:khandor@usc.edu"><i class="fas fa-envelope"></i></a></li>
-          </ul>
-          <div class="row">
-            <!-- Contact info item start -->
-            <div class="contact-info-item">
-              <div class="icon"><i class="fa fa-phone"></i></div>
-              <h4>Call me on</h4>
-              <p>+1 (213) 245-5750</p>
-            </div>
-            <!-- Contact info item end -->
-            <!-- Contact info item start -->
-            <div class="contact-info-item padd-15">
-              <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-              <h4>Preferred Locations</h4>
-              <p>Anywhere in the United States of America</p>
-            </div>
-            <!-- Contact info item end -->
-            <!-- Contact info item start -->
-            <div class="contact-info-item padd-15">
-              <div class="icon"><i class="fa fa-envelope"></i></div>
-              <h4>Email</h4>
-              <p>khandorvatsal203@gmail.com</p>
-              <p>khandor@usc.edu</p>
-            </div>
-            <!-- Contact info item end -->
-            <!-- Contact info item start -->
-            <div class="contact-info-item padd-15">
-              <div class="icon"><i class="fa fa-globe-europe"></i></div>
-              <h4>Website</h4>
-              <p>khandorvatsal.github.io</p>
-            </div>
-            <!-- Contact info item end -->
+          <div class="card">
+            <h3>Core strengths</h3>
+            <ul class="clean-list">
+              <li>Distributed systems and backend infrastructure</li>
+              <li>Reliability, scalability, and secure policy controls</li>
+              <li>GenAI workflows: embeddings, RAG, and token efficiency</li>
+              <li>Applied ML and data-driven experimentation</li>
+            </ul>
           </div>
-          <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-          <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
-          <!-- Contact Form -->
-          <div class="row">
-            <div class="contact-form padd-15">
-              <form action="https://formspree.io/f/xbjvywnb" method="POST">
-                <div class="row">
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <label>
-                      <input type="text" class="form-control" placeholder="Name" required>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <label>
-                      <input type="email" name="email" class="form-control" placeholder="Email" required>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      </label>
-                      <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <label>
-                      <textarea name="message" class="form-control" id="" placeholder="Message" required></textarea>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
-                </div>
-              </div>
-            </form>
+          <div class="card">
+            <h3>Skills snapshot</h3>
+            <div class="tag-grid">
+              <span>Python</span>
+              <span>Java</span>
+              <span>JavaScript</span>
+              <span>C/C++</span>
+              <span>MySQL</span>
+              <span>PostgreSQL</span>
+              <span>MongoDB</span>
+              <span>AWS</span>
+              <span>GCP</span>
+              <span>CDK/IaC</span>
+              <span>Distributed Systems</span>
+              <span>GenAI/RAG</span>
+            </div>
           </div>
         </div>
       </section>
-      <!-- Contact End -->
-    </div>
+
+      <section class="section" id="experience">
+        <div class="section-head">
+          <p class="section-eyebrow">Experience</p>
+          <h2>Shipped ML + software across research and production</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-card">
+            <div>
+              <h3>Amazon Web Services – Software Engineer (Policies, Identity & Governance)</h3>
+              <p class="muted">
+                <span class="date-range" data-start="2024-10" data-end="present">October 2024 – Present</span><span class="tenure"></span> · Seattle, WA
+              </p>
+            </div>
+            <ul>
+              <li>Deprecated 600K+ lines of legacy code and 27 unused packages, delivering $1M+/year infrastructure savings.</li>
+              <li>Built CDK-based control-plane infrastructure, resolving NAT hairpinning for VPC traffic and supporting ~800K rps.</li>
+              <li>Improved deployment workflows for policy enforcement infra, cutting region expansion from 6 weeks to 3 days.</li>
+              <li>Migrated monitoring canaries to new Policy APIs, improving uptime 28% and reducing latency 35%.</li>
+              <li>Onboarded 25+ critical APIs to authentication safeguards and stage-aware throttling to mitigate retry storms.</li>
+            </ul>
+          </div>
+          <div class="timeline-card">
+            <div>
+              <h3>USC / Saban Research Institute – Software Engineer</h3>
+              <p class="muted">
+                <span class="date-range" data-start="2024-01" data-end="2024-10">January 2024 – October 2024</span><span class="tenure"></span> · Los Angeles, CA
+              </p>
+            </div>
+            <ul>
+              <li>Built a secure clinical data platform for 3+ hospitals, centralizing registry workflows.</li>
+              <li>Implemented RBAC for 1,500 users across doctor/analyst/admin roles with PHI-free data handling.</li>
+              <li>Replaced spreadsheet workflows, cutting reconciliation overhead by ~90% and improving data consistency.</li>
+            </ul>
+          </div>
+          <div class="timeline-card">
+            <div>
+              <h3>Bombay Softwares – Machine Learning Intern</h3>
+              <p class="muted">
+                <span class="date-range" data-start="2021-09" data-end="2021-12">September 2021 – December 2021</span><span class="tenure"></span>
+              </p>
+            </div>
+            <ul>
+              <li>Improved rep quality detection ~25% using 33 BlazePose keypoints and posture heuristics.</li>
+              <li>Designed A/B testing metrics and evaluation framework across 4 exercise types.</li>
+              <li>Refactored pipelines and API conventions, removing ~57% redundant code across 23+ exercises.</li>
+            </ul>
+          </div>
+          <div class="timeline-card">
+            <div>
+              <h3>Code13 Edutech – Machine Learning Intern</h3>
+              <p class="muted">
+                <span class="date-range" data-start="2021-05" data-end="2021-08">May 2021 – August 2021</span><span class="tenure"></span>
+              </p>
+            </div>
+            <ul>
+              <li>Built a human handoff chatbot using NLP and Botpress workflows.</li>
+              <li>Deployed course recommendation logic that increased engagement by 25%.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="section-head">
+          <p class="section-eyebrow">Education</p>
+          <h2>Strong academic foundation in computer science</h2>
+        </div>
+        <div class="education-grid">
+          <article class="card">
+            <img src="image/usc.jpg" alt="University of Southern California" />
+            <h3>University of Southern California</h3>
+            <p class="muted">MS in Computer Science, 2022 – 2024</p>
+            <p><strong>GPA 3.85/4.0.</strong></p>
+            <p>President at GRIDS and lead teaching staff for DSCI 250 and CSCI 585.</p>
+          </article>
+          <article class="card">
+            <img src="image/djsce.png" alt="Dwarkadas J. Sanghvi College of Engineering" />
+            <h3>Dwarkadas J. Sanghvi College of Engineering</h3>
+            <p class="muted">BE in Computer Engineering, 2018 – 2022</p>
+            <p><strong>GPA 9.75/10.0.</strong> <span class="inline-sep">|</span> <strong>GRE 319/340 (Quant 170/170).</strong></p>
+            <p>Academic awards and top percentile performance.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-head">
+          <p class="section-eyebrow">Projects</p>
+          <h2>Selected projects and research</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="image/portfolio/multifamily-underwriting.svg" alt="Multifamily underwriting project" />
+            <div>
+              <a class="project-tag" href="#contact">Hackathon Winner · 1st place</a>
+              <h3>Multifamily underwriting</h3>
+              <p>Scraped 5,000+ data points and built a Gemini RAG system with 65% faster query responses for NOI, DSCR, and CAP insights.</p>
+              <a href="https://github.com/khandorvatsal/jain-alert-usa-hackathon" target="_blank" rel="noreferrer">Private repo — contact for details</a>
+            </div>
+          </article>
+          <article class="project-card compact-tag">
+            <img src="image/portfolio/ipl-prediction.svg" alt="IPL prediction research" />
+            <div>
+              <a class="project-tag" href="https://indjst.org/articles/prediction-of-ipl-matches-using-machine-learning-while-tackling-ambiguity-in-results" target="_blank" rel="noreferrer">16 citations</a>
+              <h3>IPL match prediction study</h3>
+              <p>Published research on IPL match prediction; achieved 60.043% accuracy (±6.3% SD) with Random Forest and 1.4% model ambiguity.</p>
+              <a href="https://indjst.org/articles/prediction-of-ipl-matches-using-machine-learning-while-tackling-ambiguity-in-results" target="_blank" rel="noreferrer">Read paper</a>
+            </div>
+          </article>
+          <article class="project-card no-tag">
+            <img src="image/portfolio/llm-recsys.svg" alt="LLM recommender system" />
+            <div>
+              <h3>RecSys with LLM embeddings</h3>
+              <p>Generated 4096-d embeddings for 200K+ articles; boosted accuracy 15%, cut retrieval time 30%, and reduced batch time from 500 to 200 minutes.</p>
+              <a href="https://github.com/khandorvatsal/recommender-system-using-llm" target="_blank" rel="noreferrer">View repo</a>
+            </div>
+          </article>
+          <article class="project-card no-tag">
+            <img src="image/portfolio/android-bug-extraction.svg" alt="Android bug report extraction" />
+            <div>
+              <h3>Android bug report extraction</h3>
+              <p>ETL on 70,000+ GitHub issues; achieved 97.65% F1 using BERT + CRF sequence modeling. Built a crawler and NER pipeline to extract reproduction steps at scale.</p>
+              <a href="https://drive.google.com/drive/folders/18Xe5IhIyQ3O-dRe2aQEPQSrdp0qUztWv?usp=sharing" target="_blank" rel="noreferrer">View project</a>
+            </div>
+          </article>
+          <article class="project-card no-tag">
+            <img src="image/portfolio/rl-trading.svg" alt="Algorithmic trading with reinforcement learning" />
+            <div>
+              <h3>Algorithmic trading with RL + sentiment</h3>
+              <p>Assessed 5 RL algorithms; improved profitability by 119% vs. baseline with FinBERT sentiment signals. Built an end-to-end pipeline that ingests headlines and drives policy learning.</p>
+              <a href="https://colab.research.google.com/drive/1zhjV8RfOty6YTLKeL5rrVtR9nkE9h6Ix" target="_blank" rel="noreferrer">View project</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="leadership">
+        <div class="section-head">
+          <p class="section-eyebrow">Leadership & Awards</p>
+          <h2>Community building and recognition</h2>
+        </div>
+        <div class="leadership-grid">
+          <div class="card">
+            <h3>Highlights</h3>
+            <ul class="clean-list">
+              <li>President, GRIDS at USC with 16 E-board members and 500+ active members.</li>
+              <li>Led 30+ teaching staff and supported 500+ students across 4 CS/DS courses.</li>
+              <li>1st place hackathon for Gemini-based underwriting system.</li>
+              <li>Presented a Smart Mirror prototype at state-level competition.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Community & service</h3>
+            <ul class="clean-list">
+              <li>National Service Scheme volunteer across social initiatives.</li>
+              <li>Student council leader with school-wide impact.</li>
+              <li>Recognized in multiple academic and performance awards.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-head">
+          <p class="section-eyebrow">Contact</p>
+          <h2>Let’s build something impactful</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Get in touch</h3>
+            <p class="muted">I usually respond within 24 hours.</p>
+            <div class="contact-items">
+              <div>
+                <p class="label">Email</p>
+                <p><a href="mailto:khandorvatsal203@gmail.com">khandorvatsal203@gmail.com</a></p>
+              </div>
+              <div>
+                <p class="label">Phone</p>
+                <p>+1 (213) 245-5750</p>
+              </div>
+              <div>
+                <p class="label">Website</p>
+                <p><a href="https://khandorvatsal.github.io" target="_blank" rel="noreferrer">khandorvatsal.github.io</a></p>
+              </div>
+            </div>
+            <div class="icon-row" aria-label="Social links">
+              <a class="icon-button" href="https://www.linkedin.com/in/khandorvatsal/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM0.5 8.5H4.5V24H0.5V8.5ZM8.5 8.5H12.32V10.62H12.38C12.91 9.62 14.2 8.56 16.11 8.56 20.22 8.56 21 11.21 21 14.65V24H17V15.26C17 13.18 16.96 10.5 14.16 10.5 11.33 10.5 10.9 12.72 10.9 15.12V24H6.9V8.5H8.5Z" />
+                </svg>
+              </a>
+              <a class="icon-button" href="https://github.com/khandorvatsal" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 0.5C5.37 0.5 0 5.87 0 12.5c0 5.28 3.44 9.75 8.2 11.33.6.12.82-.26.82-.58 0-.29-.01-1.04-.02-2.04-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.35-1.77-1.35-1.77-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.25 1.86 1.25 1.08 1.86 2.82 1.32 3.5 1 .11-.79.42-1.32.76-1.62-2.66-.31-5.46-1.35-5.46-5.99 0-1.32.47-2.4 1.24-3.24-.12-.31-.54-1.57.12-3.28 0 0 1.01-.32 3.3 1.23.96-.27 1.99-.4 3.01-.4 1.02 0 2.05.14 3.01.4 2.29-1.55 3.3-1.23 3.3-1.23.66 1.71.24 2.97.12 3.28.77.84 1.24 1.92 1.24 3.24 0 4.65-2.8 5.68-5.47 5.98.43.37.81 1.09.81 2.2 0 1.59-.02 2.87-.02 3.26 0 .32.22.7.83.58C20.56 22.24 24 17.78 24 12.5 24 5.87 18.63 0.5 12 0.5Z" />
+                </svg>
+              </a>
+              <a class="icon-button" href="mailto:khandorvatsal203@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M2 4h20c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Zm0 2v.5l10 6.25L22 6.5V6H2Zm0 3.02V18h20V9.02l-9.47 5.92a2 2 0 0 1-2.06 0L2 9.02Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <form class="card contact-form" action="https://formspree.io/f/xbjvywnb" method="POST">
+            <h3>Send a message</h3>
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Jane Recruiter" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="jane@company.com" required />
+            </label>
+            <label>
+              <span>Subject</span>
+              <input type="text" name="subject" placeholder="Interview availability" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Tell me about the role..." required></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Vatsal Khandor. Built for clarity, impact, and recruiters.</p>
+    </footer>
   </div>
-  <!-- Main Container End -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+
   <script src="Js/index.js"></script>
 </body>
 </html>

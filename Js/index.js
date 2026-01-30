@@ -1,81 +1,63 @@
-// ==================== Typing animation ====================
+const navToggle = document.querySelector(".nav-toggle");
+const siteNav = document.querySelector(".site-nav");
+const navLinks = document.querySelectorAll(".site-nav a");
 
-let typed = new Typed(".typing", {
-  strings: ["Data Scientist", "ML Engineer"],
-  typeSpeed: 100,
-  BackSpeed: 60,
-  loop: true,
-});
+if (navToggle && siteNav) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = siteNav.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
 
-// ==================== Typing animation ====================
-
-let nav = document.querySelector(".nav"),
-  navList = nav.querySelectorAll("li"),
-  totalNavList = navList.length,
-  allSection = document.querySelectorAll(".section");
-totalSection = allSection.length;
-for (let i = 0; i < totalNavList; i++) {
-  let a = navList[i].querySelector("a");
-  a.addEventListener("click", function () {
-    removeBackSection();
-    for (let j = 0; j < totalNavList; j++) {
-      if (navList[j].querySelector("a").classList.contains("active")) {
-        addBackSection(j);
-        // allSection[j].classList.add("back-section");
-      }
-      navList[j].querySelector("a").classList.remove("active");
-    }
-    this.classList.add("active");
-    showSection(this);
-    if (window.innerWidth < 1200) {
-      asideSectionTogglerBtn();
-    }
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      siteNav.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
   });
 }
-function removeBackSection() {
-  for (let i = 0; i < totalSection; i++) {
-    allSection[i].classList.remove("back-section");
+
+const dateRanges = document.querySelectorAll(".date-range");
+
+const parseYearMonth = (value) => {
+  const [year, month] = value.split("-").map(Number);
+  if (!year || !month) return null;
+  return new Date(year, month - 1, 1);
+};
+
+const formatTenure = (months) => {
+  if (months <= 0) return "Less than 1 mo";
+  const years = Math.floor(months / 12);
+  const remaining = months % 12;
+  const parts = [];
+  if (years > 0) parts.push(`${years} yr${years > 1 ? "s" : ""}`);
+  if (remaining > 0) parts.push(`${remaining} mo${remaining > 1 ? "s" : ""}`);
+  return parts.join(" ");
+};
+
+dateRanges.forEach((range) => {
+  const startValue = range.dataset.start;
+  const endValue = range.dataset.end;
+  const tenureEl = range.parentElement.querySelector(".tenure");
+  if (!startValue || !tenureEl) return;
+
+  const startDate = parseYearMonth(startValue);
+  if (!startDate) return;
+
+  let endDate;
+  if (!endValue || endValue === "present") {
+    endDate = new Date();
+  } else {
+    const endDateRaw = parseYearMonth(endValue);
+    if (!endDateRaw) return;
+    endDate = new Date(endDateRaw.getFullYear(), endDateRaw.getMonth() + 1, 1);
   }
-}
-function addBackSection(num) {
-  allSection[num].classList.add("back-section");
-}
-function showSection(element) {
-  for (let i = 0; i < totalSection; i++) {
-    allSection[i].classList.remove("active");
-  }
-  let target = element.getAttribute("href").split("#")[1];
-  document.querySelector("#" + target).classList.add("active");
-}
-function updateNav(element) {
-  for (let i = 0; i < totalNavList; i++) {
-    navList[i].querySelector("a").classList.remove("active");
-    let target = element.getAttribute("href").split("#")[1];
-    if (
-      target ===
-      navList[i].querySelector("a").getAttribute("href").split("#")[1]
-    ) {
-      navList[i].querySelector("a").classList.add("active");
-    }
-  }
-}
-document.querySelector(".hire-me").addEventListener("click", function () {
-  let sectionIndex = this.getAttribute("data-section-index");
-  // console.log(sectionIndex);
-  showSection(this);
-  updateNav(this);
-  removeBackSection();
-  addBackSection(sectionIndex);
+
+  const months =
+    (endDate.getFullYear() - startDate.getFullYear()) * 12 +
+    (endDate.getMonth() - startDate.getMonth()) -
+    (endDate.getDate() < startDate.getDate() ? 1 : 0);
+
+  if (months < 0) return;
+
+  tenureEl.textContent = ` · ${formatTenure(months)}`;
 });
-let navTogglerBtn = document.querySelector(".nav-toggler"),
-  aside = document.querySelector(".aside");
-navTogglerBtn.addEventListener("click", () => {
-  asideSectionTogglerBtn();
-});
-function asideSectionTogglerBtn() {
-  aside.classList.toggle("open");
-  navTogglerBtn.classList.toggle("open");
-  for (let i = 0; i < totalSection; i++) {
-    allSection[i].classList.toggle("open");
-  }
-}

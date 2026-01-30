@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="IPL prediction study illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff1e6" />
+      <stop offset="1" stop-color="#f5eaf6" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f97316" />
+      <stop offset="1" stop-color="#7c3aed" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="48" fill="url(#bg)" />
+
+  <!-- Scoreboard -->
+  <rect x="140" y="120" width="360" height="110" rx="20" fill="#ffffff" stroke="#eadce6" />
+  <rect x="180" y="160" width="200" height="16" rx="8" fill="#eadce6" />
+  <rect x="180" y="190" width="120" height="12" rx="6" fill="#eadce6" />
+
+  <!-- Stadium bowl -->
+  <path d="M110 560 C250 260 950 260 1090 560" fill="#ffffff" stroke="#eadce6" stroke-width="12" />
+  <path d="M200 560 C320 320 880 320 1000 560" fill="none" stroke="#eadce6" stroke-width="10" />
+  <path d="M300 560 C400 360 800 360 900 560" fill="none" stroke="#eadce6" stroke-width="8" />
+
+  <!-- Pitch -->
+  <rect x="520" y="460" width="160" height="240" rx="22" fill="#ffffff" stroke="#e8d5c8" />
+  <rect x="550" y="510" width="100" height="140" rx="16" fill="#f5ede6" />
+
+  <!-- Ball -->
+  <circle cx="420" cy="420" r="42" fill="#ffffff" stroke="url(#accent)" stroke-width="10" />
+  <path d="M392 410 C420 390 448 390 476 410" fill="none" stroke="url(#accent)" stroke-width="6" />
+  <path d="M392 432 C420 452 448 452 476 432" fill="none" stroke="url(#accent)" stroke-width="6" />
+
+  <!-- Prediction chart -->
+  <rect x="720" y="420" width="320" height="220" rx="26" fill="#ffffff" stroke="#eadce6" />
+  <path d="M760 600 L820 520 L880 560 L940 480 L1020 520" fill="none" stroke="url(#accent)" stroke-width="10" stroke-linecap="round" />
+  <circle cx="820" cy="520" r="8" fill="#f97316" />
+  <circle cx="880" cy="560" r="8" fill="#f97316" />
+  <circle cx="940" cy="480" r="8" fill="#f97316" />
+  <circle cx="1020" cy="520" r="8" fill="#f97316" />
+</svg>

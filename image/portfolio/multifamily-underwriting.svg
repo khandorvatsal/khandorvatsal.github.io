@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Multifamily underwriting illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff3e6" />
+      <stop offset="1" stop-color="#f7e4d7" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e06c4e" />
+      <stop offset="1" stop-color="#b24f37" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="48" fill="url(#bg)" />
+
+  <!-- Building -->
+  <rect x="120" y="170" width="260" height="460" rx="24" fill="#ffffff" stroke="#e8d6c6" />
+  <rect x="170" y="230" width="60" height="60" rx="10" fill="#f2e4d9" />
+  <rect x="260" y="230" width="60" height="60" rx="10" fill="#f2e4d9" />
+  <rect x="170" y="320" width="60" height="60" rx="10" fill="#f2e4d9" />
+  <rect x="260" y="320" width="60" height="60" rx="10" fill="#f2e4d9" />
+  <rect x="170" y="410" width="60" height="60" rx="10" fill="#f2e4d9" />
+  <rect x="260" y="410" width="60" height="60" rx="10" fill="#f2e4d9" />
+  <rect x="205" y="520" width="90" height="90" rx="12" fill="#f2e4d9" />
+
+  <!-- Underwriting card -->
+  <rect x="460" y="180" width="620" height="360" rx="32" fill="#ffffff" stroke="#eadfd0" />
+  <rect x="520" y="240" width="200" height="18" rx="9" fill="#f3e7da" />
+  <rect x="520" y="280" width="280" height="18" rx="9" fill="#f3e7da" />
+  <rect x="520" y="320" width="240" height="18" rx="9" fill="#f3e7da" />
+
+  <!-- Chart line -->
+  <path d="M540 460 L660 380 L760 430 L860 330 L980 360" fill="none" stroke="url(#accent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="660" cy="380" r="10" fill="#e06c4e" />
+  <circle cx="760" cy="430" r="10" fill="#e06c4e" />
+  <circle cx="860" cy="330" r="10" fill="#e06c4e" />
+  <circle cx="980" cy="360" r="10" fill="#e06c4e" />
+
+  <!-- Calculator -->
+  <rect x="540" y="570" width="260" height="170" rx="24" fill="#ffffff" stroke="#eadfd0" />
+  <rect x="580" y="610" width="180" height="26" rx="12" fill="#f3e7da" />
+  <rect x="585" y="650" width="48" height="40" rx="8" fill="#f3e7da" />
+  <rect x="642" y="650" width="48" height="40" rx="8" fill="#f3e7da" />
+  <rect x="699" y="650" width="48" height="40" rx="8" fill="#f3e7da" />
+  <rect x="756" y="650" width="48" height="40" rx="8" fill="#f3e7da" />
+</svg>
